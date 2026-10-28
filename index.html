@@ -3,65 +3,66 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f8f1ec">
-  <meta name="description" content="Acessórios e bijuterias para destacar sua beleza. Conheça a Milena Targino Bijux.">
-  <title>Milena Targino Bijux | Acessórios com personalidade</title>
-  <style>
-    :root{--ink:#30241f;--muted:#796b64;--cream:#fbf7f3;--rose:#ead2cb;--wine:#754b4a;--line:#e8ddd6}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
-    a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}.announcement{background:var(--wine);color:#fff;text-align:center;padding:10px 16px;font-size:12px;letter-spacing:.08em}
-    header{background:#fffaf7;border-bottom:1px solid var(--line)}.nav{max-width:1160px;margin:auto;padding:20px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .brand{font-family:Georgia,serif;font-size:23px;letter-spacing:.03em}.brand small{display:block;font:10px Arial,sans-serif;letter-spacing:.28em;text-align:center;margin-top:5px}.links{display:flex;gap:24px;font-size:13px}.cart{border:1px solid var(--wine);background:transparent;padding:10px 14px;color:var(--wine);border-radius:2px}
-    .hero{max-width:1160px;margin:auto;padding:64px 24px 70px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:42px}.eyebrow{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(--wine)}h1{font:clamp(42px,5vw,66px)/1.05 Georgia,serif;font-weight:normal;margin:18px 0}.hero p{color:var(--muted);font-size:16px;line-height:1.8;max-width:440px}.cta{display:inline-block;background:var(--wine);color:white;padding:15px 23px;margin-top:16px;font-size:12px;letter-spacing:.1em;text-transform:uppercase}.hero-art{min-height:380px;background:linear-gradient(145deg,#ead7cc,#f6e9df 55%,#d6b4a5);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}.hero-art:before,.hero-art:after{content:"";position:absolute;border:1px solid #fff9;border-radius:50%;width:230px;height:300px;transform:rotate(25deg)}.hero-art:after{width:170px;height:245px;transform:rotate(-25deg)}.hero-art span{font:italic 26px Georgia,serif;color:#754b4a;text-align:center;z-index:1;padding:20px}
-    .section{max-width:1160px;margin:auto;padding:48px 24px 68px}.section-head{text-align:center;margin-bottom:30px}.section-head h2{font:normal 36px Georgia,serif;margin:8px 0}.section-head p{color:var(--muted);font-size:14px}
-    .products{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.product{background:white;border:1px solid var(--line);padding:14px}.product-art{height:210px;background:linear-gradient(135deg,#f0e2d9,#e4c9bb);display:grid;place-items:center;color:#754b4a;font:italic 22px Georgia,serif}.product:nth-child(2) .product-art{background:linear-gradient(135deg,#f5ece6,#d8c5bb)}.product:nth-child(3) .product-art{background:linear-gradient(135deg,#e6d9d0,#cba995)}.product h3{font:normal 19px Georgia,serif;margin:15px 0 6px}.product p{color:var(--muted);font-size:13px;margin:0 0 12px}.product-bottom{display:flex;align-items:center;justify-content:space-between;gap:8px}.price{font-weight:bold;font-size:14px}.add{background:transparent;border:1px solid var(--wine);color:var(--wine);padding:9px 10px;font-size:11px}
-    .about{background:#f0e3dc;text-align:center;padding:55px 24px}.about h2{font:normal 34px Georgia,serif;margin:0 0 14px}.about p{max-width:620px;margin:auto;color:#655650;line-height:1.8;font-size:14px}
-    footer{background:#30241f;color:#fff5ef;padding:35px 24px;text-align:center}footer .brand{font-size:21px}footer p{font-size:12px;color:#d8c7be;line-height:1.8}.notice{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:#30241f;color:white;padding:12px 18px;font-size:13px;display:none;z-index:3}
-    @media(max-width:700px){.nav{padding:16px;flex-wrap:wrap}.links{order:3;width:100%;justify-content:center;gap:18px}.brand{font-size:20px}.hero{padding:40px 20px;grid-template-columns:1fr;gap:28px}.hero-art{min-height:260px}.section{padding:38px 18px 48px}.products{grid-template-columns:1fr;gap:15px}.product-art{height:230px}.section-head h2{font-size:30px}.cart{padding:8px 10px;font-size:12px}}
-  </style>
+  <meta name="theme-color" content="#f7efe3">
+  <meta name="description" content="Milena Targino Acessórios: prata 925 e acessórios folheados com elegância, cuidado e personalidade.">
+  <title>Milena Targino Acessórios | Prata 925 & Folheados</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <div class="announcement">UM TOQUE ESPECIAL PARA CADA MOMENTO ✨</div>
-  <header><nav class="nav" aria-label="Navegação principal">
-    <a class="brand" href="#" aria-label="Milena Targino Bijux - início">MILENA TARGINO<small>BIJUX</small></a>
-    <div class="links"><a href="#inicio">Início</a><a href="#colecao">Coleção</a><a href="#sobre">Sobre nós</a></div>
-    <button class="cart" id="cartButton" type="button">Sacola (<span id="cartCount">0</span>)</button>
-  </nav></header>
-  <main>
-    <section class="hero" id="inicio">
-      <div><span class="eyebrow">Detalhes que encantam</span><h1>Seu brilho,<br>do seu jeito.</h1><p>Peças escolhidas para acompanhar sua personalidade e transformar os pequenos momentos em ocasiões especiais.</p><a class="cta" href="#colecao">Descobrir coleção</a></div>
-      <div class="hero-art" role="img" aria-label="Arte decorativa em tons suaves"><span>Beleza nos<br>detalhes</span></div>
-    </section>
-    <section class="section" id="colecao"><div class="section-head"><span class="eyebrow">Escolhas especiais</span><h2>Favoritos da coleção</h2><p>Encontre o detalhe perfeito para completar seu estilo.</p></div>
-      <div class="products">
-        <article class="product"><div class="product-art" aria-label="Ilustração decorativa de brincos">Brincos</div><h3>Brincos delicados</h3><p>Elegância para todos os dias</p><div class="product-bottom"><span class="price">Consulte o valor</span><button class="add" data-product="Brincos delicados">Adicionar à sacola</button></div></article>
-        <article class="product"><div class="product-art" aria-label="Ilustração decorativa de colar">Colares</div><h3>Colares especiais</h3><p>Um toque de charme no visual</p><div class="product-bottom"><span class="price">Consulte o valor</span><button class="add" data-product="Colares especiais">Adicionar à sacola</button></div></article>
-        <article class="product"><div class="product-art" aria-label="Ilustração decorativa de pulseira">Pulseiras</div><h3>Pulseiras versáteis</h3><p>Detalhes que fazem a diferença</p><div class="product-bottom"><span class="price">Consulte o valor</span><button class="add" data-product="Pulseiras versáteis">Adicionar à sacola</button></div></article>
+  <div class="topline">PRATA 925 & ACESSÓRIOS FOLHEADOS <span>✦</span> ELEGÂNCIA EM CADA DETALHE</div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Milena Targino Acessórios, início">
+      <img src="assets/logo.svg" alt="" width="58" height="58">
+      <span><strong>Milena Targino</strong><small>ACESSÓRIOS</small></span>
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Menu principal">
+      <a href="#colecao">Coleção</a><a href="#materiais">Materiais</a><a href="pages/tamanhos.html">Guia de tamanhos</a><a href="pages/cuidados.html">Cuidados</a><a href="pages/garantia.html">Garantia</a><a href="pages/loja.html">Nossa loja</a>
+    </nav>
+    <a class="bag-link" href="#colecao">Sacola <span id="cart-count">0</span></a>
+  </header>
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">O luxo está nos detalhes</p>
+        <h1>Seu brilho.<br><em>Sua essência.</em></h1>
+        <p class="hero-text">Peças que acompanham sua história — da delicadeza da prata 925 ao charme dos acessórios folheados.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#colecao">Descobrir coleção <span>↗</span></a><a class="text-link" href="#materiais">Conheça os materiais</a></div>
+        <div class="hero-note"><span class="sparkle">✧</span><span>Escolhas especiais para iluminar o seu dia.</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-orb"></div>
+        <div class="hero-card"><span class="visual-overline">MILENA TARGINO</span><div class="jewel-symbol">MT</div><span class="visual-caption">ACESSÓRIOS</span></div>
+        <span class="floating-label label-one">Prata 925</span><span class="floating-label label-two">Elegância atemporal</span>
       </div>
     </section>
-    <section class="about" id="sobre"><span class="eyebrow">Feito para você</span><h2>Seu estilo merece brilhar</h2><p>Na Milena Targino Bijux, acreditamos que os acessórios contam histórias. Explore nossas peças e encontre aquelas que combinam com você. Em breve, mais novidades por aqui!</p></section>
+    <section class="trust-strip" aria-label="Diferenciais"><div><span>✧</span><p><b>Prata 925</b><small>Beleza e autenticidade</small></p></div><div><span>✦</span><p><b>Folheados</b><small>Brilho para cada ocasião</small></p></div><div><span>♡</span><p><b>Atendimento próximo</b><small>Estamos aqui para ajudar</small></p></div><div><span>⌖</span><p><b>Retirada na loja</b><small>Consulte disponibilidade</small></p></div></section>
+    <section class="section collection" id="colecao">
+      <div class="section-heading"><div><p class="eyebrow">Encontre a sua próxima peça favorita</p><h2>Uma coleção <em>para brilhar</em></h2></div><p>Do essencial ao marcante, escolha os detalhes que falam por você.</p></div>
+      <div class="filters" aria-label="Filtros de produtos">
+        <label>Material<select id="filter-material"><option value="todos">Todos os materiais</option><option value="prata925">Prata 925</option><option value="folheado-ouro">Folheado a ouro</option><option value="folheado-rodio">Folheado a ródio</option></select></label>
+        <label>Tipo<select id="filter-type"><option value="todos">Todos os tipos</option><option value="aneis">Anéis</option><option value="brincos">Brincos</option><option value="colares">Colares</option><option value="pulseiras">Pulseiras</option><option value="conjuntos">Conjuntos</option></select></label>
+        <label>Estilo<select id="filter-style"><option value="todos">Todos os estilos</option><option value="minimalista">Minimalista</option><option value="festa">Festa</option><option value="geometrico">Geométrico</option></select></label>
+        <button id="clear-filters" class="clear-filter" type="button">Limpar filtros ↺</button>
+      </div>
+      <p class="catalog-note">Prévia da coleção: os cartões abaixo são modelos demonstrativos. Cadastre fotos, estoque e preços reais antes de começar a vender.</p>
+      <div class="product-grid" id="product-grid">
+        <article class="product-card" data-material="prata925" data-type="brincos" data-style="minimalista"><div class="product-image product-silver"><span class="product-tag">PRATA 925</span><div class="jewel-art silver-hoop">◯</div><button class="quick-add" data-name="Argolas clássicas em prata 925" type="button" aria-label="Adicionar argolas à sacola">＋</button></div><div class="product-meta"><div><h3>Argolas clássicas</h3><p>Prata 925 · Minimalista</p></div><span class="price">Consulte</span></div><button class="product-cta" data-name="Argolas clássicas em prata 925">Tenho interesse ↗</button></article>
+        <article class="product-card" data-material="folheado-ouro" data-type="colares" data-style="minimalista"><div class="product-image product-gold"><span class="product-tag">FOLHEADO A OURO</span><div class="jewel-art gold-chain">♡</div><button class="quick-add" data-name="Colar delicado folheado a ouro" type="button" aria-label="Adicionar colar à sacola">＋</button></div><div class="product-meta"><div><h3>Colar delicado</h3><p>Folheado a ouro · Minimalista</p></div><span class="price">Consulte</span></div><button class="product-cta" data-name="Colar delicado folheado a ouro">Tenho interesse ↗</button></article>
+        <article class="product-card" data-material="folheado-rodio" data-type="aneis" data-style="geometrico"><div class="product-image product-pearl"><span class="product-tag">FOLHEADO A RÓDIO</span><div class="jewel-art ring-art">◌</div><button class="quick-add" data-name="Anel geométrico folheado a ródio" type="button" aria-label="Adicionar anel à sacola">＋</button></div><div class="product-meta"><div><h3>Anel geométrico</h3><p>Folheado a ródio · Geométrico</p></div><span class="price">Consulte</span></div><button class="product-cta" data-name="Anel geométrico folheado a ródio">Tenho interesse ↗</button></article>
+        <article class="product-card" data-material="prata925" data-type="pulseiras" data-style="minimalista"><div class="product-image product-blush"><span class="product-tag">PRATA 925</span><div class="jewel-art bracelet-art">◎</div><button class="quick-add" data-name="Pulseira delicada em prata 925" type="button" aria-label="Adicionar pulseira à sacola">＋</button></div><div class="product-meta"><div><h3>Pulseira delicada</h3><p>Prata 925 · Minimalista</p></div><span class="price">Consulte</span></div><button class="product-cta" data-name="Pulseira delicada em prata 925">Tenho interesse ↗</button></article>
+        <article class="product-card" data-material="folheado-ouro" data-type="brincos" data-style="festa"><div class="product-image product-sand"><span class="product-tag">FOLHEADO A OURO</span><div class="jewel-art drop-art">✧</div><button class="quick-add" data-name="Brincos festa folheados a ouro" type="button" aria-label="Adicionar brincos à sacola">＋</button></div><div class="product-meta"><div><h3>Brilho de festa</h3><p>Folheado a ouro · Festa</p></div><span class="price">Consulte</span></div><button class="product-cta" data-name="Brincos festa folheados a ouro">Tenho interesse ↗</button></article>
+        <article class="product-card" data-material="prata925" data-type="conjuntos" data-style="geometrico"><div class="product-image product-lilac"><span class="product-tag">PRATA 925</span><div class="jewel-art set-art">◇</div><button class="quick-add" data-name="Conjunto geométrico em prata 925" type="button" aria-label="Adicionar conjunto à sacola">＋</button></div><div class="product-meta"><div><h3>Conjunto geométrico</h3><p>Prata 925 · Geométrico</p></div><span class="price">Consulte</span></div><button class="product-cta" data-name="Conjunto geométrico em prata 925">Tenho interesse ↗</button></article>
+      </div>
+      <p id="empty-state" class="empty-state" hidden>Nenhuma peça encontrada com esses filtros. Tente outra combinação.</p>
+    </section>
+    <section class="materials" id="materiais"><div class="materials-intro"><p class="eyebrow">Escolha com confiança</p><h2>Dois acabamentos.<br><em>Muitas maneiras de brilhar.</em></h2><p>Informação clara para você escolher suas peças com segurança. Os detalhes de composição e garantia devem ser confirmados para cada produto.</p></div><a class="material-card material-card-silver" href="pages/garantia.html"><span class="material-number">01 / PRATA 925</span><div class="material-icon">925</div><h3>Prata 925</h3><p>Um clássico versátil, com brilho elegante e atemporal. A prata pode escurecer naturalmente e pode ser cuidada com limpeza adequada.</p><span class="material-link">Saiba como cuidar ↗</span></a><a class="material-card material-card-gold" href="pages/cuidados.html"><span class="material-number">02 / FOLHEADOS</span><div class="material-icon">✧</div><h3>Folheados a ouro e ródio</h3><p>Acabamentos luminosos para compor produções delicadas ou marcantes. A durabilidade depende do banho e dos cuidados diários.</p><span class="material-link">Ver guia de conservação ↗</span></a></section>
+    <section class="service-band"><div><p class="eyebrow">Um atendimento feito para você</p><h2>Da escolha ao cuidado,<br><em>conte com a gente.</em></h2></div><div class="service-links"><a href="pages/tamanhos.html"><span>01</span><div><b>Guia de tamanhos</b><small>Encontre a medida ideal</small></div><strong>↗</strong></a><a href="pages/garantia.html"><span>02</span><div><b>Garantia e trocas</b><small>Leia as condições da loja</small></div><strong>↗</strong></a><a href="pages/loja.html"><span>03</span><div><b>Visite nossa loja</b><small>Retirada e atendimento</small></div><strong>↗</strong></a></div></section>
+    <section class="newsletter" id="contato"><div><p class="eyebrow">Vamos conversar?</p><h2>Seu próximo brilho começa aqui.</h2><p>Fale com a loja para consultar preços, disponibilidade, retirada e condições de compra.</p></div><button class="button button-dark whatsapp-link" type="button">Falar pelo WhatsApp ↗</button></section>
   </main>
-  <footer><div class="brand">MILENA TARGINO<small>BIJUX</small></div><p>Acessórios com personalidade e carinho.<br>© <span id="year"></span> Milena Targino Bijux. Todos os direitos reservados.</p></footer>
-  <div class="notice" id="notice" role="status" aria-live="polite"></div>
-  <script>
-    const cart = [];
-    const count = document.getElementById('cartCount');
-    const notice = document.getElementById('notice');
-    document.getElementById('year').textContent = new Date().getFullYear();
-    document.querySelectorAll('.add').forEach(button => button.addEventListener('click', () => {
-      cart.push(button.dataset.product);
-      count.textContent = cart.length;
-      notice.textContent = button.dataset.product + ' adicionados à sacola.';
-      notice.style.display = 'block';
-      window.clearTimeout(window.noticeTimer);
-      window.noticeTimer = window.setTimeout(() => notice.style.display = 'none', 2400);
-    }));
-    document.getElementById('cartButton').addEventListener('click', () => {
-      notice.textContent = cart.length ? 'Na sua sacola: ' + cart.join(', ') + '.' : 'Sua sacola está vazia por enquanto.';
-      notice.style.display = 'block';
-      window.clearTimeout(window.noticeTimer);
-      window.noticeTimer = window.setTimeout(() => notice.style.display = 'none', 3200);
-    });
-  </script>
+  <footer class="site-footer"><a class="brand footer-brand" href="#inicio"><img src="assets/logo.svg" alt="" width="48" height="48"><span><strong>Milena Targino</strong><small>ACESSÓRIOS</small></span></a><p>Prata 925 & acessórios folheados<br><small>© <span id="year"></span> Milena Targino Acessórios.</small></p><div class="footer-links"><a href="pages/garantia.html">Garantia e trocas</a><a href="pages/cuidados.html">Cuidados</a><a href="pages/loja.html">Nossa loja</a></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
