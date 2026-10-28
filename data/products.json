@@ -1,0 +1,20 @@
+[
+  {
+    "id": "exemplo-prata-925",
+    "name": "Nome real do produto",
+    "category": "brincos",
+    "material": "prata925",
+    "style": "minimalista",
+    "price": null,
+    "currency": "BRL",
+    "image": "assets/images/nome-da-foto.webp",
+    "description": "Preencha com a descrição confirmada do produto.",
+    "composition": "Confirmar com fornecedor",
+    "platingLayers": null,
+    "nickelFree": null,
+    "sizes": [],
+    "stock": 0,
+    "warranty": "Preencher condições oficiais",
+    "published": false
+  }
+]
